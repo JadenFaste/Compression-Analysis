@@ -3,8 +3,8 @@ from scipy.interpolate import griddata
 import numpy as np
 
 # Load the dataset
-file_path = 'Compressor_clean.xlsx'
-df = pd.read_excel(file_path)
+file_path = 'https://raw.githubusercontent.com/JadenFaste/Compression-Analysis/main/Compressor_clean.csv'
+df = pd.read_csv(file_path)
 
 # Manually set the header based on the correct content
 df.columns = ['Condensing_Temperature', 'Type', 36, 48, 55, 70, 87, 107, 130, 143, 156]
