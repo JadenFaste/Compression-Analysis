@@ -47,8 +47,8 @@ def interpolate_value(evap_temp, cond_temp, points, values):
 
 ######################################################
 
-evap_temp_input = float(input("Enter the evaporating temperature: "))
-cond_temp_input = float(input("Enter the condensing temperature: "))
+evap_temp_input = float(input("Enter the evaporating pressure: "))
+cond_temp_input = float(input("Enter the condensing pressure: "))
 
 interpolated_capacity = interpolate_value(evap_temp_input, cond_temp_input, capacity_points, capacity_values)
 interpolated_power = interpolate_value(evap_temp_input, cond_temp_input, power_points, power_values)
